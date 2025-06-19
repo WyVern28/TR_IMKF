@@ -1,0 +1,134 @@
+/* Import variabel warna dari file utama jika memungkinkan, atau definisikan ulang */
+:root {
+    --main-bg: #121212;
+    --card-bg: #181818;
+    --primary-text: #fff;
+    --secondary-text: #b3b3b3;
+    --accent-color: #1DB954;
+    --border-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    background-color: var(--main-bg);
+    color: var(--primary-text);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Kustomisasi Navigasi Tab */
+.nav-tabs {
+    border-bottom: 2px solid var(--border-color);
+}
+
+.nav-tabs .nav-link {
+    background: none;
+    border: none;
+    color: var(--secondary-text);
+    font-weight: 500;
+    padding: 1rem 1.5rem;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-tabs .nav-link:hover {
+    color: var(--primary-text);
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--accent-color);
+    background-color: transparent;
+    border-color: var(--accent-color);
+}
+
+/* Tata Letak Item Pengaturan */
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.setting-label {
+    flex: 1;
+}
+
+.setting-label h5 {
+    margin: 0;
+    font-weight: 500;
+}
+
+.setting-label p {
+    margin: 0;
+    color: var(--secondary-text);
+    font-size: 0.9rem;
+}
+
+.setting-control {
+    flex-basis: 40%;
+    max-width: 40%;
+}
+
+hr {
+    border-top: 1px solid var(--border-color);
+    margin: 0;
+}
+
+/* Kustomisasi Elemen Form */
+.form-control, .form-select {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--primary-text);
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #282828;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.25rem rgba(29, 185, 84, 0.25);
+    color: var(--primary-text);
+}
+
+.form-control:disabled {
+    background-color: #282828;
+    color: var(--secondary-text);
+}
+
+/* Kustomisasi Saklar Toggle */
+.form-switch .form-check-input {
+    width: 3.5em;
+    height: 1.75em;
+    cursor: pointer;
+    background-color: #333;
+    border-color: #555;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23888'/%3e%3c/svg%3e");
+}
+
+.form-switch .form-check-input:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.25rem rgba(29, 185, 84, 0.25);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+.form-switch .form-check-input:checked {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+/* Tombol */
+.btn-primary {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #000;
+    font-weight: bold;
+    padding: 0.75rem 2rem;
+}
+.btn-primary:hover {
+     background-color: #1ed760;
+    border-color: #1ed760;
+}
+.btn-secondary {
+    background-color: var(--card-bg);
+    border-color: var(--secondary-text);
+    color: var(--primary-text);
+}
+.btn-secondary:hover {
+     background-color: #282828;
+}

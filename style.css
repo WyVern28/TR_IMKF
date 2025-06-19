@@ -1,0 +1,81 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container-fluid {
+    background: url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.login-container {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    backdrop-filter: blur(5px);
+}
+
+.login-header .fa-music, 
+.login-header .fa-headphones-alt,
+.login-header .fa-key {
+    color: #1DB954; /* Spotify Green */
+}
+
+.login-header h2 {
+    font-weight: 700;
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 0.25rem;
+}
+
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #1DB954;
+    box-shadow: 0 0 0 0.25rem rgba(29, 185, 84, 0.25);
+    color: #fff;
+}
+
+.form-control::placeholder {
+    color: #ccc;
+}
+
+.input-group-text {
+    background-color: #1DB954;
+    border: 1px solid #1DB954;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #1DB954;
+    border-color: #1DB954;
+    padding: 10px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1ed760;
+    border-color: #1ed760;
+}
+
+a {
+    color: #1DB954;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1ed760;
+    text-decoration: underline;
+}
+
+hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
